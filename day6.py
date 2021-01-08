@@ -17,7 +17,7 @@ while len(content) > x + 1:
     common_y = split(group_p2[y])
     while len(group_p2) > y + 1:
         y += 1
-        common_y = [x for x in common_y if x in split(group_p2[y])] #for some reason this doesn't work when checking the last set of answers in the last group (finds no common letters in the last element)
+        common_y = [x for x in common_y if x in split(group_p2[y])]
     p2_total += len(common_y)
 print('Part 1 answer: ' +str(p1_total))
 print('Part 2 answer: ' +str(p2_total))
